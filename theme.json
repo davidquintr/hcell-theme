@@ -80,80 +80,74 @@
 				},
 				{
 					"fontFace": [
-						{
-							"fontFamily": "Rubik",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": [
-								"file:./assets/fonts/rubik_normal_500.ttf"
-							]
-						},
-						{
-							"fontFamily": "Rubik",
-							"fontStyle": "italic",
-							"fontWeight": "500",
-							"src": [
-								"file:./assets/fonts/rubik_italic_500.ttf"
-							]
-						},
-						{
-							"fontFamily": "Rubik",
-							"fontStyle": "normal",
-							"fontWeight": "300",
-							"src": [
-								"file:./assets/fonts/rubik_normal_300.ttf"
-							]
-						},
-						{
-							"fontFamily": "Rubik",
-							"fontStyle": "italic",
-							"fontWeight": "300",
-							"src": [
-								"file:./assets/fonts/rubik_italic_300.ttf"
-							]
-						}
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "normal",
+						"fontWeight": "400",
+						"src": [
+						  "file:./assets/fonts/Poppins-Regular.ttf"
+						]
+					  },
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "italic",
+						"fontWeight": "400",
+						"src": [
+						  "file:./assets/fonts/Poppins-Italic.ttf"
+						]
+					  },
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "normal",
+						"fontWeight": "300",
+						"src": [
+						  "file:./assets/fonts/Poppins-Light.ttf"
+						]
+					  },
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "italic",
+						"fontWeight": "300",
+						"src": [
+						  "file:./assets/fonts/Poppins-LightItalic.ttf"
+						]
+					  },
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "normal",
+						"fontWeight": "700",
+						"src": [
+						  "file:./assets/fonts/Poppins-Bold.ttf"
+						]
+					  },
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "italic",
+						"fontWeight": "700",
+						"src": [
+						  "file:./assets/fonts/Poppins-BoldItalic.ttf"
+						]
+					  },
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "normal",
+						"fontWeight": "900",
+						"src": [
+						  "file:./assets/fonts/Poppins-Black.ttf"
+						]
+					  },
+					  {
+						"fontFamily": "Poppins",
+						"fontStyle": "italic",
+						"fontWeight": "900",
+						"src": [
+						  "file:./assets/fonts/Poppins-BlackItalic.ttf"
+						]
+					  }
 					],
-					"fontFamily": "Rubik",
-					"slug": "rubik"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Piazzolla",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/piazzolla_normal_400.ttf"
-							]
-						},
-						{
-							"fontFamily": "Piazzolla",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/piazzolla_italic_400.ttf"
-							]
-						},
-						{
-							"fontFamily": "Piazzolla",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/piazzolla_normal_700.ttf"
-							]
-						},
-						{
-							"fontFamily": "Piazzolla",
-							"fontStyle": "italic",
-							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/piazzolla_italic_700.ttf"
-							]
-						}
-					],
-					"fontFamily": "Piazzolla",
-					"slug": "piazzolla"
-				}
+					"fontFamily": "Poppins",
+					"slug": "poppins"
+				  }				  
 			],
 			"fontSizes": [
 				{
@@ -213,7 +207,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)",
+					"fontFamily": "var(--wp--preset--font-family--poppins)",
 					"fontSize": "0.9rem",
 					"letterSpacing": "5%",
 					"lineHeight": "1",
@@ -272,7 +266,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)"
+					"fontFamily": "var(--wp--preset--font-family--poppins)"
 				}
 			},
 			"core/code": {
@@ -330,7 +324,7 @@
 			},
 			"core/media-text": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)",
+					"fontFamily": "var(--wp--preset--font-family--poppins)",
 					"fontSize": "1.6rem"
 				}
 			},
@@ -348,11 +342,12 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)"
+					"fontFamily": "var(--wp--preset--font-family--poppins)"
 				}
 			},
 			"core/paragraph": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--poppins)",
 					"fontSize": "1.4rem"
 				}
 			},
@@ -442,7 +437,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)",
+					"fontFamily": "var(--wp--preset--font-family--poppins)",
 					"fontStyle": "normal"
 				}
 			},
@@ -572,7 +567,7 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--rubik)",
+					"fontFamily": "var(--wp--preset--font-family--poppins)",
 					"fontStyle": "normal",
 					"fontWeight": "500",
 					"lineHeight": "1.125"
