@@ -14,16 +14,15 @@ const excludeList = [
   '.gitignore',
   'package-lock.json',
   'package.json',
-  '.git'
+  '.git',
+  "buildnc.js"
 ];
 
 function shouldExclude(filePath) {
   const relativePath = path.relative(srcDir, filePath);
   
-  // Normaliza las rutas y maneja correctamente el separador de directorios
   const normalizedPath = relativePath.replace(/\\/g, '/');  // Para Windows
 
-  // Verifica si alguna ruta excluida es exactamente igual o el prefijo del path
   return excludeList.some(excludeItem => {
     const normalizedExcludeItem = excludeItem.replace(/\\/g, '/');  // Normaliza el separador
     return normalizedPath === normalizedExcludeItem || normalizedPath.startsWith(normalizedExcludeItem + '/');
@@ -52,15 +51,12 @@ function copyRecursive(src, dest) {
 }
 
 try {
-  // Limpia el directorio de salida si existe
   if (fs.existsSync(outDir)) {
     fs.rmSync(outDir, { recursive: true, force: true });
   }
 
-  // Crea el directorio de salida
   fs.mkdirSync(outDir, { recursive: true });
 
-  // Inicia el proceso de copia
   copyRecursive(srcDir, outDir);
   console.log('Archivos copiados exitosamente a la carpeta "out"');
 } catch (err) {

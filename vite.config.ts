@@ -17,9 +17,5 @@ export default defineConfig({
     sourcemap: false,
   },
   css: {
-    preprocessorOptions: {
-      scss: {
-      }
-    }
   }
 });
