@@ -21,7 +21,7 @@
 	function tecnotool_support() {
 
 		// Enqueue editor styles.
-		add_editor_style( 'style.css' );
+		add_editor_style( '/dist/bundle.css' );
 
 		// Make theme available for translation.
 		load_theme_textdomain( 'tecnotool' );
@@ -67,6 +67,18 @@ if ( ! function_exists( 'tecnotool_styles' ) ) :
 endif;
 
 add_action( 'wp_enqueue_scripts', 'tecnotool_styles' );
+
+function tecnotool_enqueue_editor_scripts() {
+    wp_enqueue_script(
+        'my-editor-script',
+        get_template_directory_uri() . '/dist/bundle.js',
+        array(),
+        filemtime(get_template_directory() . '/dist/bundle.js'),
+        true
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'tecnotool_enqueue_editor_scripts' );
+
 
 function tecnotool_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/carousel' );

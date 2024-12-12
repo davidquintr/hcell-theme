@@ -1,9 +1,9 @@
 {
     "name": "tecnotool/carousel",
     "title": "Carrusel Simple",
-    "description": "Carrusel de imágenes simples.",
+    "description": "Carrusel de imágenes simples, permite adjuntar información o simplemente colocar imágenes.",
     "category": "formatting",
-    "icon": "admin-comments",
+    "icon": "<svg viewBox=\"0 0 21 21\"><g fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" transform=\"translate(2 5)\"><path d=\"m12.5.5h-8.00000001c-1.1045695 0-2 .8954305-2 2v6c0 1.1045695.8954305 2 2 2h8.00000001c1.1045695 0 2-.8954305 2-2v-6c0-1.1045695-.8954305-2-2-2z\"/><path d=\"m16.5.5v10\"/><path d=\"m.5.5v10\"/></g></svg>",
     "keywords": ["testimonial", "quote"],
     "acf": {
         "mode": "preview",

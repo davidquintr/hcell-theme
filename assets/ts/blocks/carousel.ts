@@ -1,49 +1,53 @@
-const carouselSliders = document.querySelectorAll(".tecnoblock-carousel-slider") as NodeListOf<HTMLUListElement>;
-const carouselCounters = document.querySelectorAll(".tecnoblock-carousel-counter") as NodeListOf<HTMLDivElement>;
+function initializeCarousel() {
+    const carouselSliders = document.querySelectorAll(".tecnoblock-carousel-slider") as NodeListOf<HTMLUListElement>;
+    const carouselCounters = document.querySelectorAll(".tecnoblock-carousel-counter") as NodeListOf<HTMLDivElement>;
 
-if (carouselSliders.length && carouselCounters.length) {
-    carouselSliders.forEach((carousel, index) => handleCarouselInstance(carousel, index));
-}
+    carouselSliders.forEach((carousel, index) => {
+        const items = carousel.children as HTMLCollectionOf<HTMLLIElement>;
+        const counterElement = carouselCounters[index];
+        const buttons = Array.from(counterElement.children) as HTMLButtonElement[];
 
-function handleCarouselInstance(carousel: HTMLUListElement, index: number) {
-    const items = carousel.children as HTMLCollectionOf<HTMLLIElement>;
-    const buttons = Array.from(carouselCounters[index].children) as HTMLButtonElement[];
+        const automovement = carousel.getAttribute("automovement");
+        const intervalTime = automovement ? parseInt(automovement) : 0;
 
-    buttons.forEach((button, btnIndex) => {
-        button.addEventListener("click", () => {
-            const targetItem = items[btnIndex];
-            if (targetItem) {
-                carousel.scrollTo({
-                    top: 0,
-                    left: targetItem.offsetLeft,
-                    behavior: "smooth"
-                });
-            }
+        buttons.forEach((button, btnIndex) => {
+            button.addEventListener("click", () => {
+                scrollToItem(carousel, items[btnIndex]);
+            });
         });
-    });
 
-    carousel.addEventListener("scroll", () => {
-        const activeIndex = findActiveCarouselIndex(carousel, items);
-        updateActiveCarouselClass(buttons, activeIndex);
-    });
+        carousel.addEventListener("scroll", () => {
+            updateActiveClass(carousel, buttons, items);
+        });
 
-    const initialIndex = findActiveCarouselIndex(carousel, items);
-    updateActiveCarouselClass(buttons, initialIndex);
-}
+        updateActiveClass(carousel, buttons, items);
 
-function findActiveCarouselIndex(carousel: HTMLUListElement, items: HTMLCollectionOf<HTMLLIElement>): number {
-    const scrollLeft = carousel.scrollLeft;
-    const itemWidth = items[0]?.offsetWidth || 0;
-
-    return Math.round(scrollLeft / itemWidth);
-}
-
-function updateActiveCarouselClass(buttons: HTMLButtonElement[], activeIndex: number): void {
-    buttons.forEach((button, index) => {
-        if (index === activeIndex) {
-            button.classList.add("active");
-        } else {
-            button.classList.remove("active");
+        if (intervalTime > 0) {
+            setInterval(() => scrollToItem(carousel, items[(findActiveIndex(carousel, items) + 1) % items.length]), intervalTime);
         }
     });
 }
+
+function scrollToItem(carousel: HTMLUListElement, targetItem: HTMLLIElement) {
+    carousel.scrollTo({
+        left: targetItem.offsetLeft,
+        behavior: "smooth"
+    });
+}
+
+function updateActiveClass(carousel: HTMLUListElement, buttons: HTMLButtonElement[], items: HTMLCollectionOf<HTMLLIElement>) {
+    const activeIndex = findActiveIndex(carousel, items);
+    buttons.forEach((button, index) => {
+        button.classList.toggle("active", index === activeIndex);
+    });
+}
+
+function findActiveIndex(carousel: HTMLUListElement, items: HTMLCollectionOf<HTMLLIElement>): number {
+    return Math.round(carousel.scrollLeft / (items[0]?.offsetWidth || 1));
+}
+
+if (window.acf) {
+    window.acf.addAction('render_block_preview', initializeCarousel);
+}
+
+document.addEventListener('DOMContentLoaded', initializeCarousel);
