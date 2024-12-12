@@ -9,7 +9,7 @@
  */
 
 
-if ( ! function_exists( 'tecnotool_support' ) ) :
+ if ( ! function_exists( 'tecnotool_support' ) ) :
 
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -44,19 +44,32 @@ if ( ! function_exists( 'tecnotool_styles' ) ) :
 
 		// Register theme stylesheet.
 		wp_register_style(
-			'tecnotool-style',
-			get_stylesheet_directory_uri() . '/style.css',
+			'basic-style',
+			get_stylesheet_directory_uri() . '/dist/bundle.css',
 			array(),
 			wp_get_theme()->get( 'Version' )
 		);
 
 		// Enqueue theme stylesheet.
-		wp_enqueue_style( 'tecnotool-style' );
+		wp_enqueue_style( 'basic-style' );
 
+		wp_register_script(
+            'basic-script',
+            get_stylesheet_directory_uri() . '/dist/bundle.js',
+            array(),
+            wp_get_theme()->get( 'Version' ),
+            true
+        );
+
+        wp_enqueue_script( 'basic-script' );
 	}
 
 endif;
 
 add_action( 'wp_enqueue_scripts', 'tecnotool_styles' );
 
+function tecnotool_register_acf_blocks() {
+    register_block_type( __DIR__ . '/blocks/carousel' );
+}
 
+add_action( 'init', 'tecnotool_register_acf_blocks' );

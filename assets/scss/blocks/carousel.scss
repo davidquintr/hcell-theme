@@ -1,0 +1,56 @@
+.tecnoblock {
+    &-carousel {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+
+        &-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            gap: 16px;
+            scrollbar-width: none;
+            margin: 0;
+            padding: 0;
+
+            > li {
+                list-style: none;
+                position: relative;
+                flex-shrink: 0;
+                scroll-snap-align: start;
+                background-color: gray;
+                aspect-ratio: 16/9;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-counter {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+
+            &-item {
+                width: 16px;
+                height: 16px;
+                border-radius: 9999px;
+                background-color: var(--wp--preset--color--background);
+                border: none;
+                transition: 0.3s all;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--wp--preset--color--foreground);
+                }
+
+                &.active {
+                    width: 32px;
+                    background-color: var(--wp--preset--color--secondary);
+                }
+            }
+        }
+    }
+}
