@@ -1,0 +1,468 @@
+[
+    {
+        "key": "group_675b53ba24ed8",
+        "title": "Ajustes Visuales",
+        "fields": [
+            {
+                "key": "field_675b53babbb65",
+                "label": "Plataformas Externas",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_675b53db8735c",
+                "label": "Redes Sociales",
+                "name": "social_medias",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Agregar Fila",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_675b54238735e",
+                        "label": "Red Social",
+                        "name": "social_media",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "fab fa-facebook": "Facebook",
+                            "fab fa-twitter": "Twitter",
+                            "fab fa-instagram": "Instagram",
+                            "fab fa-linkedin": "LinkedIn",
+                            "fab fa-youtube": "YouTube",
+                            "fab fa-pinterest": "Pinterest",
+                            "fab fa-snapchat-ghost": "Snapchat",
+                            "fab fa-whatsapp": "WhatsApp",
+                            "fab fa-tiktok": "TikTok",
+                            "fab fa-github": "GitHub"
+                        },
+                        "default_value": false,
+                        "return_format": "array",
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "allow_in_bindings": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "parent_repeater": "field_675b53db8735c"
+                    },
+                    {
+                        "key": "field_675b54a58735f",
+                        "label": "Vínculo",
+                        "name": "link",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "allow_in_bindings": 0,
+                        "placeholder": "",
+                        "parent_repeater": "field_675b53db8735c"
+                    }
+                ]
+            },
+            {
+                "key": "field_675b614ac024d",
+                "label": "Menú Flotante",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_675b5534cdc1d",
+                "label": "Mostrar Menú Flotante",
+                "name": "show_floating_menu",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "allow_in_bindings": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "ui": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "ajustes-visuales"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_675b2b3b25660",
+        "title": "Carrusel Simple",
+        "fields": [
+            {
+                "key": "field_675b3479df717",
+                "label": "Calidad de las Imágenes",
+                "name": "images_quality",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "thumbnail": "Miniatura",
+                    "medium": "Mediana",
+                    "medium_large": "Mediana grande",
+                    "large": "Grande",
+                    "1536x1536": "1536x1536",
+                    "2048x2048": "2048x2048",
+                    "full": "Completa"
+                },
+                "default_value": "medium_large",
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "allow_in_bindings": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_675b40817a8fe",
+                "label": "Relación por Aspecto",
+                "name": "aspect_ratio",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1\/1": "1:1 Cuadrado",
+                    "4\/3": "4:3 Estándar",
+                    "16\/9": "16:9 Panorámico",
+                    "21\/9": "21:9 Ultra panorámico",
+                    "3\/2": "3:2 Fotográfico",
+                    "2\/1": "2:1 Ancho panorámico",
+                    "16\/10": "16:10 Pantalla",
+                    "5\/4": "5:4 Clásico",
+                    "9\/16": "9:16 Vertical",
+                    "4\/5": "4:5 Vertical"
+                },
+                "default_value": "16:9",
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "allow_in_bindings": 1,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_675b4eae27559",
+                "label": "Permitir Movimiento Automático",
+                "name": "allow_automatic_movement",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "allow_in_bindings": 0,
+                "ui_on_text": "Si",
+                "ui_off_text": "No",
+                "ui": 1
+            },
+            {
+                "key": "field_675b4e9427558",
+                "label": "Milisegundos",
+                "name": "movement_ms",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_675b4eae27559",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 250,
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_675b2d93beb09",
+                "label": "Permitir información Avanzada",
+                "name": "allow_advanced_info",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "allow_in_bindings": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "ui": 1
+            },
+            {
+                "key": "field_675b2d5fbeb07",
+                "label": "Elementos del Carrusel",
+                "name": "simple_carousel_elements",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 1,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Agregar Elemento",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_675b2d70beb08",
+                        "label": "Imagen",
+                        "name": "image",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "allow_in_bindings": 0,
+                        "preview_size": "large",
+                        "parent_repeater": "field_675b2d5fbeb07"
+                    },
+                    {
+                        "key": "field_675b2dabbeb0a",
+                        "label": "Información Avanzada",
+                        "name": "advanced_info",
+                        "aria-label": "",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_675b2d93beb09",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_675b2dd1beb0c",
+                                "label": "Título",
+                                "name": "title",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "allow_in_bindings": 0,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_675b2dc2beb0b",
+                                "label": "Descripción",
+                                "name": "description",
+                                "aria-label": "",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "allow_in_bindings": 0,
+                                "tabs": "all",
+                                "toolbar": "full",
+                                "media_upload": 1,
+                                "delay": 0
+                            }
+                        ],
+                        "parent_repeater": "field_675b2d5fbeb07"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "tecnotool\/carousel"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "ui_options_page_675b539556eff",
+        "title": "Ajustes Visuales",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Ajustes Visuales",
+        "menu_slug": "ajustes-visuales",
+        "parent_slug": "themes.php",
+        "advanced_configuration": 1,
+        "icon_url": "",
+        "menu_title": "",
+        "position": "",
+        "redirect": false,
+        "description": "",
+        "menu_icon": [],
+        "update_button": "Actualizar",
+        "updated_message": "Opciones Actualizadas",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "",
+        "autoload": 0
+    }
+]
