@@ -50,8 +50,16 @@ if ( ! function_exists( 'tecnotool_styles' ) ) :
 			wp_get_theme()->get( 'Version' )
 		);
 
-		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'basic-style' );
+
+		wp_register_style(
+			'fontawesome',
+			'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css',
+			array(),
+			"6.7.1"
+		);
+
+		wp_enqueue_style( 'fontawesome' );
 
 		wp_register_script(
             'basic-script',
@@ -82,6 +90,7 @@ add_action( 'enqueue_block_editor_assets', 'tecnotool_enqueue_editor_scripts' );
 
 function tecnotool_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/carousel' );
+    register_block_type( __DIR__ . '/blocks/floating-menu' );
 }
 
 add_action( 'init', 'tecnotool_register_acf_blocks' );
