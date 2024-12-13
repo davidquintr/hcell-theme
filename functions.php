@@ -22,6 +22,8 @@
 
 		// Enqueue editor styles.
 		add_editor_style( '/dist/bundle.css' );
+		add_editor_style( '/assets/css/fontawesome-6.7.1.css');
+
 
 		// Make theme available for translation.
 		load_theme_textdomain( 'tecnotool' );
@@ -54,7 +56,7 @@ if ( ! function_exists( 'tecnotool_styles' ) ) :
 
 		wp_register_style(
 			'fontawesome',
-			'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css',
+			get_stylesheet_directory_uri() . '/assets/css/fontawesome-6.7.1.css',
 			array(),
 			"6.7.1"
 		);
