@@ -9,11 +9,14 @@
             $media_info = $media["social_media"];
             $media_label = $media_info["label"];
             $media_value = $media_info["value"];
+
+            $media_link = $media["link"];
         ?>
             <li class="tecnoblock-floating-menu-item">
-                <a class="">
+                <a href="<?php echo $media_link ?>">
                     <i class="<?php echo $media_value ?>"></i>
                 </a>
+                <span><?php echo $media_label ?></span>
             </li>
         <?php endforeach ?>
     </ul>
