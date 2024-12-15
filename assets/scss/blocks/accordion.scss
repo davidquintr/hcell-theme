@@ -1,0 +1,57 @@
+.tecnoblock {
+    &-accordion {
+        &-item{
+            border: 1px solid  var(--wp--preset--color--background);
+            border-bottom: none;
+
+            &:not(:first-child) {
+                border-bottom: 1px solid  var(--wp--preset--color--background);
+            }
+
+            > * {
+                padding: 16px;
+            }
+
+            &-title {
+                transition: 0.3s background-color;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                &:hover {
+                    background-color: var(--wp--preset--color--background);
+                }
+            }
+
+            &-content {
+                transition: height 0.5s;
+            }
+
+            &[open] .tecnoblock-accordion-item-title {
+                font-weight: 600;
+                background-color: var(--wp--preset--color--background); 
+
+                > i.closed-icon {
+                    display: none;
+                }
+            }
+
+            &:not([open]) .tecnoblock-accordion-item-title {
+                > i.open-icon {
+                    display: none;
+                }
+            }
+
+            &:not([open]) .tecnoblock-accordion-item-content {
+                padding: 0;
+                height: 0;
+                overflow: hidden;
+            }
+
+            &[open] .tecnoblock-accordion-item-content {
+                height: calc-size(auto);
+            }
+        }
+    }
+}

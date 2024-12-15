@@ -22,7 +22,7 @@
 
 		// Enqueue editor styles.
 		add_editor_style( '/dist/bundle.css' );
-		add_editor_style( '/assets/css/fontawesome-6.7.1.css');
+		//add_editor_style( '/assets/css/fontawesome-6.7.1.css');
 
 
 		// Make theme available for translation.
@@ -53,7 +53,7 @@ if ( ! function_exists( 'tecnotool_styles' ) ) :
 		);
 
 		wp_enqueue_style( 'basic-style' );
-
+/*
 		wp_register_style(
 			'fontawesome',
 			get_stylesheet_directory_uri() . '/assets/css/fontawesome-6.7.1.css',
@@ -62,7 +62,7 @@ if ( ! function_exists( 'tecnotool_styles' ) ) :
 		);
 
 		wp_enqueue_style( 'fontawesome' );
-
+*/
 		wp_register_script(
             'basic-script',
             get_stylesheet_directory_uri() . '/dist/bundle.js',
@@ -93,6 +93,7 @@ add_action( 'enqueue_block_editor_assets', 'tecnotool_enqueue_editor_scripts' );
 function tecnotool_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/carousel' );
     register_block_type( __DIR__ . '/blocks/floating-menu' );
+    register_block_type( __DIR__ . '/blocks/accordion' );
 }
 
 add_action( 'init', 'tecnotool_register_acf_blocks' );

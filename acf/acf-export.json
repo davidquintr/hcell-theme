@@ -1,5 +1,228 @@
 [
     {
+        "key": "group_675d33af55419",
+        "title": "Accordion",
+        "fields": [
+            {
+                "key": "field_675d3502f3289",
+                "label": "Mostrar el primer elemento abierto",
+                "name": "show_first_element_open",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "allow_in_bindings": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "ui": 1
+            },
+            {
+                "key": "field_675d352df328a",
+                "label": "Solo un elemento abierto a la vez",
+                "name": "one_element_at_time",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "allow_in_bindings": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "ui": 1
+            },
+            {
+                "key": "field_675d355ff328b",
+                "label": "Nombre del Accordion",
+                "name": "accordion_name",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_675d352df328a",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_675d363835624",
+                "label": "Icono del accordion abierto",
+                "name": "open_accordion_icon",
+                "aria-label": "",
+                "type": "font-awesome",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "icon_sets": [
+                    "solid",
+                    "regular",
+                    "brands"
+                ],
+                "custom_icon_set": "",
+                "default_label": "&lt;i class=\"fa-classic fa-solid fa-chevron-up fa-fw\"&gt;&lt;\/i&gt; Chevron Up",
+                "default_value": "{\"family\" : \"classic\", \"style\" : \"solid\", \"id\" : \"chevron-up\", \"label\" : \"Chevron Up\", \"unicode\" : \"f077\"}",
+                "save_format": "class",
+                "allow_null": 0,
+                "show_preview": 1,
+                "enqueue_fa": 0,
+                "allow_in_bindings": 0,
+                "fa_live_preview": "",
+                "choices": []
+            },
+            {
+                "key": "field_675d367735625",
+                "label": "Icono del accordion cerrado",
+                "name": "closed_accordion_icon",
+                "aria-label": "",
+                "type": "font-awesome",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "icon_sets": [
+                    "solid",
+                    "regular",
+                    "brands"
+                ],
+                "custom_icon_set": "",
+                "default_label": "&lt;i class=\"fa-classic fa-solid fa-chevron-up fa-fw\"&gt;&lt;\/i&gt; Chevron Up",
+                "default_value": "{\"family\" : \"classic\", \"style\" : \"solid\", \"id\" : \"chevron-down\", \"label\" : \"Chevron Down\", \"unicode\" : \"f078\"}",
+                "save_format": "class",
+                "allow_null": 0,
+                "show_preview": 1,
+                "enqueue_fa": 0,
+                "allow_in_bindings": 0,
+                "fa_live_preview": "",
+                "choices": []
+            },
+            {
+                "key": "field_675d346eb33d7",
+                "label": "Elementos del Accordion",
+                "name": "accordion_elements",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Agregar Fila",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_675d348ab33d8",
+                        "label": "Título",
+                        "name": "title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 0,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_675d346eb33d7"
+                    },
+                    {
+                        "key": "field_675d3496b33d9",
+                        "label": "Contenido",
+                        "name": "content",
+                        "aria-label": "",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "allow_in_bindings": 0,
+                        "tabs": "all",
+                        "toolbar": "basic",
+                        "media_upload": 0,
+                        "delay": 0,
+                        "parent_repeater": "field_675d346eb33d7"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "tecnotool\/accordion"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
         "key": "group_675b53ba24ed8",
         "title": "Ajustes Visuales",
         "fields": [
@@ -27,7 +250,7 @@
                 "name": "social_medias",
                 "aria-label": "",
                 "type": "repeater",
-                "instructions": "",
+                "instructions": "Esto se utiliza para configurar las redes sociales disponibles para la página actual, puede estar disponible en regiones como Header, Footer o como Menú Flotante.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -35,7 +258,7 @@
                     "class": "",
                     "id": ""
                 },
-                "layout": "row",
+                "layout": "block",
                 "pagination": 0,
                 "min": 0,
                 "max": 0,
@@ -53,7 +276,7 @@
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "",
+                            "width": "50",
                             "class": "",
                             "id": ""
                         },
@@ -86,10 +309,10 @@
                         "aria-label": "",
                         "type": "url",
                         "instructions": "",
-                        "required": 0,
+                        "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "",
+                            "width": "50",
                             "class": "",
                             "id": ""
                         },
@@ -138,6 +361,77 @@
                 "ui_on_text": "",
                 "ui_off_text": "",
                 "ui": 1
+            },
+            {
+                "key": "field_675d121aea67f",
+                "label": "Visuales",
+                "name": "visuals_floating_menu",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_675b5534cdc1d",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_675d122eea680",
+                        "label": "Mostrar etiqueta al pasar el cursor",
+                        "name": "show_tag_on_hover",
+                        "aria-label": "",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "allow_in_bindings": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_675d1259ea681",
+                        "label": "Ubicación del Menú",
+                        "name": "menu_location",
+                        "aria-label": "",
+                        "type": "button_group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "left": "Izquierda",
+                            "right": "Derecha"
+                        },
+                        "default_value": "right : Derecha",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "allow_in_bindings": 0,
+                        "layout": "horizontal"
+                    }
+                ]
             }
         ],
         "location": [
@@ -450,14 +744,17 @@
         "menu_order": 0,
         "page_title": "Ajustes Visuales",
         "menu_slug": "ajustes-visuales",
-        "parent_slug": "themes.php",
+        "parent_slug": "none",
         "advanced_configuration": 1,
         "icon_url": "",
         "menu_title": "",
         "position": "",
-        "redirect": false,
+        "redirect": 0,
         "description": "",
-        "menu_icon": [],
+        "menu_icon": {
+            "type": "dashicons",
+            "value": "dashicons-align-full-width"
+        },
         "update_button": "Actualizar",
         "updated_message": "Opciones Actualizadas",
         "capability": "edit_posts",

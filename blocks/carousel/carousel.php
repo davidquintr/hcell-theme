@@ -55,5 +55,5 @@ if (is_array($elements)):
 </div>
 
 <?php else: ?>
-    <p>No carousel elements found.</p>
+    <p>No hay elementos en el carrusel.</p>
 <?php endif; ?>
