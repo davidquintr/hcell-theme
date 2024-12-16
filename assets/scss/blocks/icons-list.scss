@@ -1,0 +1,19 @@
+.tecnoblock {
+    &-icons-list {
+        display: grid;
+        gap: var(--gap);
+        padding: 0;
+
+        &.two-cols-ver {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-item {
+            list-style: none;
+            
+            &-link {
+                text-decoration: none;
+            }   
+        }    
+    }
+}

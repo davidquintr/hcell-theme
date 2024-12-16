@@ -94,6 +94,7 @@ function tecnotool_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/carousel' );
     register_block_type( __DIR__ . '/blocks/floating-menu' );
     register_block_type( __DIR__ . '/blocks/accordion' );
+    register_block_type( __DIR__ . '/blocks/icons-list' );
 }
 
 add_action( 'init', 'tecnotool_register_acf_blocks' );

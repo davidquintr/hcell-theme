@@ -22,9 +22,11 @@
                 <a target="_blank" class="tecnoblock-floating-menu-item-icon" href="<?php echo $media_link ?>">
                     <i class="<?php echo $media_value ?>"></i>
                 </a>
-                <div class="label <?php echo 'location-' . $menu_location  ?>">
-                    <span ><?php echo $media_label ?></span>
-                </div>
+                <?php if($show_tag_on_hover): ?>
+                    <div class="label <?php echo 'location-' . $menu_location  ?>">
+                        <span ><?php echo $media_label ?></span>
+                    </div>
+                <?php endif; ?>
             </li>
         <?php endforeach ?>
     </ul>
