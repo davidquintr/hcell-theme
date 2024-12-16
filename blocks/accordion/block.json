@@ -7,7 +7,7 @@
     "keywords": [],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "accordion.php"
+        "renderTemplate": "block.php"
     },
     "supports": {
         "anchor": true

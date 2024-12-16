@@ -25,7 +25,14 @@
             }
 
             &-content {
+                overflow: hidden;
                 transition: height 0.5s;
+                height: 0;
+                interpolate-size: allow-keywords;
+
+                @starting-style {
+                    height: 0;
+                }
             }
 
             &[open] .tecnoblock-accordion-item-title {
@@ -43,14 +50,8 @@
                 }
             }
 
-            &:not([open]) .tecnoblock-accordion-item-content {
-                padding: 0;
-                height: 0;
-                overflow: hidden;
-            }
-
-            &[open] .tecnoblock-accordion-item-content {
-                height: calc-size(auto);
+            &[open] &-content {
+                height: auto;
             }
         }
     }

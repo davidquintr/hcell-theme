@@ -7,7 +7,7 @@
     "keywords": ["carousel", "images"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "carousel.php"
+        "renderTemplate": "block.php"
     },
     "supports": {
         "anchor": true
