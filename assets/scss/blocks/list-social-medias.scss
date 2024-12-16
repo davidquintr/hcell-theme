@@ -1,0 +1,67 @@
+.tecnoblock {
+    &-social-medias {
+        display: flex;
+        gap: var(--gap);
+        padding: 0;
+
+        &-item {
+            list-style: none;
+            
+            &-icon {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                text-decoration: none;
+
+                i {
+                    font-size: var(--size);
+                }
+
+                span {
+                    font-size: var(--size);
+                }
+            }   
+
+            &.style-circle, &.style-square, &.style-rounded {
+                > a {
+                    background-color: var(--wp--preset--color--background);
+                    padding: unset;
+                    box-sizing: border-box;
+                    aspect-ratio: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: calc(var(--padding) * 2);
+                    height: auto;
+    
+                }
+
+                &.with-tag {
+                    > a {
+                        padding-inline: calc(var(--padding) / 1.5);
+                        width: auto;
+                        height: calc(var(--padding) * 2);
+                    }
+                }
+            }
+
+            &.style-circle {
+                > a {
+                    border-radius: 9999px;
+                }
+            }
+
+            &.style-square {
+                > a {
+                    border-radius: 0;
+                }            
+            }
+
+            &.style-rounded {
+                > a {
+                    border-radius: 16px;
+                }      
+            }
+        }
+    }
+}
