@@ -1,26 +1,35 @@
 .tecnoblock {
     &-accordion {
         &-item{
-            border: 1px solid  var(--wp--preset--color--background);
+            border: 1px solid  var(--wp--preset--color--secondary);
             border-bottom: none;
+            overflow: hidden;
 
             &:not(:first-child) {
-                border-bottom: 1px solid  var(--wp--preset--color--background);
+                border-bottom: 1px solid  var(--wp--preset--color--secondary);
             }
 
             > * {
                 padding: 16px;
             }
 
+            &:first-child {
+                border-radius: 16px 16px 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0 0 16px 16px;
+            }
+
             &-title {
-                transition: 0.3s background-color;
+                transition: background-color 0.3s, color 0.3s;
                 cursor: pointer;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 
                 &:hover {
-                    background-color: var(--wp--preset--color--background);
+                    background-color: var(--wp--preset--color--tertiary);
                 }
             }
 
@@ -37,7 +46,8 @@
 
             &[open] .tecnoblock-accordion-item-title {
                 font-weight: 600;
-                background-color: var(--wp--preset--color--background); 
+                background-color: var(--wp--preset--color--secondary); 
+                color: white;
 
                 > i.closed-icon {
                     display: none;
@@ -52,6 +62,18 @@
 
             &[open] &-content {
                 height: auto;
+
+                * {
+                    font-size: 16px;
+                }
+
+                > *:first-child {
+                    margin-bottom: 0;
+                }
+
+                > *:first-child {
+                    margin-top: 0;
+                }
             }
         }
     }

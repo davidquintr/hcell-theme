@@ -1,5 +1,11 @@
+@use "./reset";
+@use "./presets";
+
 @use "./blocks/carousel.scss";
 @use "./blocks/floating-menu.scss";
 @use "./blocks/accordion.scss";
 @use "./blocks/icons-list.scss";
 @use "./blocks/list-social-medias.scss";
+@use "./blocks/horizontal-accordion.scss";
+
+@use "./template-part/header.scss";

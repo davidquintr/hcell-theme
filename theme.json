@@ -13,36 +13,41 @@
       "gradients": [],
       "palette": [
         {
-          "color": "#145233",
+          "color": "#FF7301",
           "name": "Primary",
           "slug": "primary"
         },
         {
-          "color": "#145233",
+          "color": "#124076",
           "name": "Secondary",
           "slug": "secondary"
         },
         {
-          "color": "#1f7a3d",
+          "color": "#0F1A27",
           "name": "Foreground",
           "slug": "foreground"
         },
         {
-          "color": "#e2e1cf",
+          "color": "#fff",
           "name": "Background",
           "slug": "background"
         },
         {
-          "color": "#fcfbf0",
+          "color": "#537EB1",
           "name": "Tertiary",
           "slug": "tertiary"
+        },
+        {
+          "color": "#ff730133",
+          "name": "Low Orange",
+          "slug": "low-orange"
         }
       ],
       "text": true
     },
     "layout": {
       "contentSize": "960px",
-      "wideSize": "1200px"
+      "wideSize": "1280px"
     },
     "shadow": {
       "defaultPresets": true,
@@ -74,56 +79,92 @@
         {
           "fontFace": [
             {
-              "fontFamily": "Poppins",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": ["file:./assets/fonts/Poppins-Regular.woff2"]
-            },
-            {
-              "fontFamily": "Poppins",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": ["file:./assets/fonts/Poppins-Italic.woff2"]
-            },
-            {
-              "fontFamily": "Poppins",
-              "fontStyle": "normal",
-              "fontWeight": "300",
-              "src": ["file:./assets/fonts/Poppins-Light.woff2"]
-            },
-            {
-              "fontFamily": "Poppins",
-              "fontStyle": "italic",
-              "fontWeight": "300",
-              "src": ["file:./assets/fonts/Poppins-LightItalic.woff2"]
-            },
-            {
-              "fontFamily": "Poppins",
-              "fontStyle": "normal",
-              "fontWeight": "700",
-              "src": ["file:./assets/fonts/Poppins-Bold.woff2"]
-            },
-            {
-              "fontFamily": "Poppins",
-              "fontStyle": "italic",
-              "fontWeight": "700",
-              "src": ["file:./assets/fonts/Poppins-BoldItalic.woff2"]
-            },
-            {
-              "fontFamily": "Poppins",
+              "fontFamily": "Nunito",
               "fontStyle": "normal",
               "fontWeight": "900",
-              "src": ["file:./assets/fonts/Poppins-Black.woff2"]
+              "src": ["file:./assets/fonts/Nunito-Black.woff2"]
             },
             {
-              "fontFamily": "Poppins",
+              "fontFamily": "Nunito",
               "fontStyle": "italic",
               "fontWeight": "900",
-              "src": ["file:./assets/fonts/Poppins-BlackItalic.woff2"]
+              "src": ["file:./assets/fonts/Nunito-BlackItalic.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": ["file:./assets/fonts/Nunito-Bold.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "italic",
+              "fontWeight": "700",
+              "src": ["file:./assets/fonts/Nunito-BoldItalic.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "src": ["file:./assets/fonts/Nunito-ExtraBold.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "italic",
+              "fontWeight": "800",
+              "src": ["file:./assets/fonts/Nunito-ExtraBoldItalic.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "normal",
+              "fontWeight": "200",
+              "src": ["file:./assets/fonts/Nunito-ExtraLight.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "italic",
+              "fontWeight": "200",
+              "src": ["file:./assets/fonts/Nunito-ExtraLightItalic.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "italic",
+              "fontWeight": "400",
+              "src": ["file:./assets/fonts/Nunito-Italic.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "normal",
+              "fontWeight": "300",
+              "src": ["file:./assets/fonts/Nunito-Light.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "italic",
+              "fontWeight": "300",
+              "src": ["file:./assets/fonts/Nunito-LightItalic.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": ["file:./assets/fonts/Nunito-Regular.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "src": ["file:./assets/fonts/Nunito-SemiBold.woff2"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontStyle": "italic",
+              "fontWeight": "600",
+              "src": ["file:./assets/fonts/Nunito-SemiBoldItalic.woff2"]
             }
           ],
-          "fontFamily": "Poppins",
-          "slug": "poppins"
+          "fontFamily": "Nunito",
+          "slug": "nunito"
         }
       ],
       "fontSizes": [
@@ -184,7 +225,7 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--poppins)",
+          "fontFamily": "var(--wp--preset--font-family--nunito)",
           "fontSize": "0.9rem",
           "letterSpacing": "5%",
           "lineHeight": "1",
@@ -194,28 +235,28 @@
           "outline": {
             "border": {
               "bottom": {
-                "color": "#21603d",
+                "color": "var(--wp--preset--color--primary)",
                 "style": "solid",
                 "width": "2px"
               },
               "left": {
-                "color": "#21603d",
+                "color": "var(--wp--preset--color--primary)",
                 "style": "solid",
                 "width": "2px"
               },
               "right": {
-                "color": "#21603d",
+                "color": "var(--wp--preset--color--primary)",
                 "style": "solid",
                 "width": "2px"
               },
               "top": {
-                "color": "#21603d",
+                "color": "var(--wp--preset--color--primary)",
                 "style": "solid",
                 "width": "2px"
               }
             },
             "color": {
-              "text": "#21603d"
+              "text": "var(--wp--preset--color--primary)"
             }
           }
         }
@@ -227,13 +268,13 @@
       },
       "core/calendar": {
         "color": {
-          "background": "var(--wp--preset--color--tertiary)",
+          "background": "var(--wp--preset--color--background)",
           "text": "var(--wp--preset--color--primary)"
         },
         "elements": {
           "heading": {
             "color": {
-              "text": "#21603d"
+              "text": "var(--wp--preset--color--secondary)"
             }
           },
           "link": {
@@ -243,7 +284,7 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--poppins)"
+          "fontFamily": "var(--wp--preset--font-family--nunito)"
         }
       },
       "core/code": {
@@ -301,7 +342,7 @@
       },
       "core/media-text": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--poppins)",
+          "fontFamily": "var(--wp--preset--font-family--nunito)",
           "fontSize": "1.6rem"
         }
       },
@@ -319,12 +360,12 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--poppins)"
+          "fontFamily": "var(--wp--preset--font-family--nunito)"
         }
       },
       "core/paragraph": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--poppins)",
+          "fontFamily": "var(--wp--preset--font-family--nunito)",
           "fontSize": "1.4rem"
         }
       },
@@ -414,7 +455,7 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--poppins)",
+          "fontFamily": "var(--wp--preset--font-family--nunito)",
           "fontStyle": "normal"
         }
       },
@@ -466,8 +507,8 @@
       }
     },
     "color": {
-      "background": "var(--wp--preset--color--tertiary)",
-      "text": "var(--wp--preset--color--primary)"
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--foreground)"
     },
     "elements": {
       "button": {
@@ -496,11 +537,11 @@
           }
         },
         "border": {
-          "radius": "0.25rem"
+          "radius": "0.5rem"
         },
         "color": {
           "background": "var(--wp--preset--color--primary)",
-          "text": "var(--wp--preset--color--tertiary)"
+          "text": "var(--wp--preset--color--background)"
         },
         "typography": {
           "fontSize": "0.9rem",
@@ -543,8 +584,11 @@
         }
       },
       "heading": {
+        "color": {
+          "text": "var(--wp--preset--color--primary)"
+        },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--poppins)",
+          "fontFamily": "var(--wp--preset--font-family--nunito)",
           "fontStyle": "normal",
           "fontWeight": "500",
           "lineHeight": "1.125"
@@ -571,7 +615,7 @@
       }
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--poppins)",
+      "fontFamily": "var(--wp--preset--font-family--nunito)",
       "fontSize": "1.4rem",
       "fontStyle": "normal",
       "fontWeight": "400",

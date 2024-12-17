@@ -1,0 +1,44 @@
+.tecnoblock {
+    &-accordion-horizontal {
+        display: flex;
+        gap: 16px;
+        padding: 0;
+
+        &-item {
+            min-width: 128px;
+            border: 1px solid var(--wp--preset--color--primary);
+            border-radius: 16px;
+            list-style: none;
+            padding: 16px;
+
+            &:not(.active) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:not(.active) &-title {
+                span {
+                    display: none;
+                }
+            }
+
+            &:not(.active) &-content {
+                display: none;
+            }
+
+            &-title {
+                color: var(--wp--preset--color--primary);
+                i {
+                    padding: 8px;
+                    background-color: var(--wp--preset--color--low-orange);
+                    border-radius: 999px;
+                }
+
+                span {
+                    color: var(--wp--preset--color--secondary);
+                }
+            }
+        }
+    }
+}
