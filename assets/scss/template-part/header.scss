@@ -1,6 +1,10 @@
 header.wp-block-template-part {
     transition: padding 0.5s;
 
+    > div {
+        background-color: white !important;
+    }
+
     @media screen and (min-width: 781px) {
         &:not(.block-editor-block-list__layout) {
             position: fixed;
@@ -19,7 +23,6 @@ header.wp-block-template-part {
                 }
             }
         }
-    }
 
     > div {
         border-radius: 8px;
@@ -61,5 +64,6 @@ header.wp-block-template-part {
 
             }
         }
+    }
     }
 }

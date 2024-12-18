@@ -3,7 +3,7 @@
     "title": "Menú Flotante",
     "description": "Muestra los vínculos a Redes Sociales configurados desde su página de opciones",
     "category": "widgets",
-    "icon": "<svg viewBox=\"0 0 21 21\"><g fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" transform=\"translate(2 5)\"><path d=\"m12.5.5h-8.00000001c-1.1045695 0-2 .8954305-2 2v6c0 1.1045695.8954305 2 2 2h8.00000001c1.1045695 0 2-.8954305 2-2v-6c0-1.1045695-.8954305-2-2-2z\"/><path d=\"m16.5.5v10\"/><path d=\"m.5.5v10\"/></g></svg>",
+    "icon": "<svg width=\"73\" height=\"258\" viewBox=\"0 0 73 258\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M64 203H9V258H64V203ZM57 210H16V251H57V210Z\" fill=\"black\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M73 0H0V187H73V0ZM57 130H16V171H57V130ZM16 73H57V114H16V73ZM57 16H16V57H57V16Z\" fill=\"black\"/><rect x=\"20\" y=\"217\" width=\"33\" height=\"5\" fill=\"black\"/><rect x=\"20\" y=\"228\" width=\"33\" height=\"5\" fill=\"black\"/><rect x=\"20\" y=\"239\" width=\"33\" height=\"5\" fill=\"black\"/></svg>",
     "keywords": [],
     "acf": {
         "mode": "preview",

@@ -28,6 +28,11 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                color: var(--wp--preset--color--secondary);
+                
+                span {
+                    color: inherit;
+                }
                 
                 &:hover {
                     background-color: var(--wp--preset--color--secondary);
@@ -40,6 +45,7 @@
                 transition: height 0.5s;
                 height: 0;
                 interpolate-size: allow-keywords;
+                color: var(--wp--preset--color--secondary);
 
                 @starting-style {
                     height: 0;
@@ -56,7 +62,7 @@
                 }
             }
 
-            &:not([open]) .tecnoblock-accordion-item-title {
+            &:not([open]) &-title {
                 > i.open-icon {
                     display: none;
                 }
