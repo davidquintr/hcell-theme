@@ -4,17 +4,44 @@
         gap: 16px;
         padding: 0;
 
+        @media screen and (max-width: 781px) {
+            flex-direction: column;
+
+            &-item {
+                min-width: none;
+                width: unset !important;
+                min-height: unset !important;
+
+                &-title {
+                    span {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+
         &-item {
             min-width: 128px;
+            min-height: 280px;
             border: 1px solid var(--wp--preset--color--primary);
             border-radius: 16px;
             list-style: none;
-            padding: 16px;
+            padding: 32px;
+            width: 100%;
+            transition: width 0.8s, background-color 0.3s;
+            opacity: 1;
 
             &:not(.active) {
+                width: 128px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
+                background-color: var(--wp--preset--color--low-orange);
+
+                &:hover {
+                    background-color: white;
+                }
             }
 
             &:not(.active) &-title {
@@ -23,22 +50,68 @@
                 }
             }
 
-            &:not(.active) &-content {
-                display: none;
+            &.active &-content {
+                opacity: 0;
+                display: block;
+                animation: 1s linear 0.2s horizontal-accordion-show ;
+                animation-fill-mode: forwards;
+                color: var(--wp--preset--color--secondary);
+
+                @media screen and (max-width: 781px) {
+                    max-height: none;
+                    animation: none;
+                    opacity: 1;
+                }
+            
             }
 
             &-title {
+                display: flex;
+                align-items: center;
                 color: var(--wp--preset--color--primary);
+                gap: 8px;
+
                 i {
+                    display: flex;
+                    align-items: center;
+                    height: auto;
                     padding: 8px;
                     background-color: var(--wp--preset--color--low-orange);
                     border-radius: 999px;
+                    aspect-ratio: 1 ;
                 }
 
                 span {
                     color: var(--wp--preset--color--secondary);
+                    font-size: 32px;
                 }
             }
+
+            &-content {
+                font-size: 16px;
+                color: var(--wp--preset--color--secondary);
+                display: none;
+                overflow: hidden;
+                max-height: 0;
+            }
+
         }
     }
 }
+
+@keyframes horizontal-accordion-show {
+    0% {
+        max-height: 0;
+    }
+
+    50% {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        max-height: 100%;
+    }
+}
+

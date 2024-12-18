@@ -53,16 +53,7 @@ if ( ! function_exists( 'tecnotool_styles' ) ) :
 		);
 
 		wp_enqueue_style( 'basic-style' );
-/*
-		wp_register_style(
-			'fontawesome',
-			get_stylesheet_directory_uri() . '/assets/css/fontawesome-6.7.1.css',
-			array(),
-			"6.7.1"
-		);
 
-		wp_enqueue_style( 'fontawesome' );
-*/
 		wp_register_script(
             'basic-script',
             get_stylesheet_directory_uri() . '/dist/bundle.js',

@@ -12,6 +12,16 @@
             list-style: none;
             
             &-link {
+                i {
+                    color: var(--wp--preset--color--primary);
+                    font-size: var(--size);
+                }
+
+                span {
+                    color: var(--wp--preset--color--secondary);
+                    font-size: var(--size);
+                }
+
                 text-decoration: none;
             }   
         }    

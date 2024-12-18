@@ -11,11 +11,11 @@
         <?php
             $accordion_item = $accordion_elements[$i];
         ?>
-        <li class="tecnoblock-accordion-horizontal-item">
+        <li class="tecnoblock-accordion-horizontal-item <?php echo $i == 0 ? "active" : "" ?>">
             <div class="tecnoblock-accordion-horizontal-item-title">
                 <i class="<?php echo $accordion_item["icon"] ?>"></i>
                 <span><?php echo esc_html($accordion_item["title"]) ?></span>
-            </sdiv>
+            </div>
             <div class="tecnoblock-accordion-horizontal-item-content">
                 <?php echo $accordion_item["description"] ?>
             </div>

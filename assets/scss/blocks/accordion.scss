@@ -2,12 +2,13 @@
     &-accordion {
         &-item{
             border: 1px solid  var(--wp--preset--color--secondary);
-            border-bottom: none;
+            border-bottom: none !important;
             overflow: hidden;
 
-            &:not(:first-child) {
-                border-bottom: 1px solid  var(--wp--preset--color--secondary);
+            &:last-child {
+                border-bottom: 1px solid var(--wp--preset--color--secondary) !important;
             }
+
 
             > * {
                 padding: 16px;
@@ -29,7 +30,8 @@
                 align-items: center;
                 
                 &:hover {
-                    background-color: var(--wp--preset--color--tertiary);
+                    background-color: var(--wp--preset--color--secondary);
+                    color: white;
                 }
             }
 
