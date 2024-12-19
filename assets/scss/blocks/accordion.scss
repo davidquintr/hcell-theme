@@ -1,9 +1,15 @@
 .tecnoblock {
     &-accordion {
+        position: relative;
+        z-index: 1;
         &-item{
             border: 1px solid  var(--wp--preset--color--secondary);
             border-bottom: none !important;
             overflow: hidden;
+            transition: 0.3s opacity;
+            z-index: 10;
+            background: white;
+            position: relative;
 
             &:last-child {
                 border-bottom: 1px solid var(--wp--preset--color--secondary) !important;
@@ -52,6 +58,10 @@
                 }
             }
 
+            &:not([open]) {
+                opacity: 0.5;
+            }
+
             &[open] .tecnoblock-accordion-item-title {
                 font-weight: 600;
                 background-color: var(--wp--preset--color--secondary); 
@@ -72,7 +82,7 @@
                 height: auto;
 
                 * {
-                    font-size: 16px;
+                    font-size: var(--wp--preset--font-size--medium);
                 }
 
                 > *:first-child {

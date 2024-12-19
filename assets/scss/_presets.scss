@@ -18,14 +18,15 @@
         width: 320px;
         aspect-ratio: 0.93;
         height: auto;
-        background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713 766" fill="none"><path d="M428.622 745.884C338.901 792.079 231.398 756.051 187.435 665.056C128.82 543.765 143.33 422.87 64.4975 302.63C12.9256 223.982 -45.4858 88.5303 54.6295 21.3528C116.842 -20.3856 196.54 -1.36923 309.806 82.2346C388.522 140.323 423.202 154.115 514.011 163.452C710.883 183.668 771.695 276.308 651.081 437.373C581.068 530.873 536.518 690.359 428.622 745.884Z" fill="%23FF7301"/></svg>');
-
+        background-color: var(--wp--preset--color--primary);
+        border-radius: 50%;
         @media screen and (max-width: 781px) {
             z-index: -1 !important;
             width: 160px !important;
         }
     }
 }
+
 
 .shape-semi-circle {
     position: relative;
@@ -49,8 +50,8 @@
         z-index: 0;
         transform: rotate(180deg);
 
-        @media screen and (max-width: 781px) {
-            opacity: 0.8;
+        @media screen and (max-width: 1280px) {
+            opacity: 0.7;
         }
     }
 
@@ -58,8 +59,8 @@
         bottom: -16px;
         left: -16px;
         z-index: 0;
-        @media screen and (max-width: 781px) {
-            opacity: 0.5;
+        @media screen and (max-width: 1280px) {
+            opacity: 0.3;
         }
     }
 }
