@@ -1,0 +1,41 @@
+.wp-block-wpzoom-forms-form.contact-simple {
+    .wp-block-columns {
+        gap: 16px;
+
+        @media screen and (max-width: 781px) {
+            gap: 0;
+        }
+
+        .wp-block-column {
+            input, textarea{
+                border-color: var(--wp--preset--color--tertiary);
+                border-radius: 8px;
+                margin-bottom: 16px;
+
+                &::placeholder {
+                    color: var(--wp--preset--color--tertiary);
+                    opacity: 0.5;
+                }
+
+                color: var(--wp--preset--color--secondary);
+            }
+        }
+    }
+
+    input[type="submit"] {
+        border: none;
+        font-size: 16px;
+        background-color: var(--wp--preset--color--primary);
+        border-radius: 8px;
+        width: 100%;
+        transition: 0.3s background-color;
+        cursor: pointer;
+        margin: 0;
+        color: white !important;
+        font-family: var(--wp--preset--font-family--nunito);
+
+        &:hover {
+            background-color: var(--wp--preset--color--secondary);
+        }
+    }
+}
