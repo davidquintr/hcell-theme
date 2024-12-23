@@ -28,11 +28,30 @@
             list-style: none;
             padding: 32px;
             width: 100%;
-            transition: width 0.8s, background-color 0.3s;
+            transition: width 0.8s, background-color 0.5s;
             opacity: 1;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
 
             @media screen and (max-width: 781px) {
                 padding: 16px !important;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                background-image: var(--background);
+                filter: saturate(0);
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.2;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
             &:not(.active) {
