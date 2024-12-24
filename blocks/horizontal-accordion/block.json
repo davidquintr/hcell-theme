@@ -1,0 +1,15 @@
+{
+    "name": "tecnotool/horizontal-accordion",
+    "title": "Accordion Horizontal",
+    "description": "Muestra información compactada de forma sencilla, similar al accordion pero en horizontal.",
+    "category": "widgets",
+    "icon": "<svg width=\"168\" height=\"168\" viewBox=\"0 0 168 168\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M168 0H0V168H168V0ZM152 16H16V152H152V16Z\" fill=\"black\"/><rect x=\"111\" width=\"168\" height=\"15\" transform=\"rotate(90 111 0)\" fill=\"black\"/><rect x=\"117\" y=\"79\" width=\"30\" height=\"10\" fill=\"black\"/><rect x=\"23\" y=\"29\" width=\"66\" height=\"10\" fill=\"black\"/><rect x=\"23\" y=\"47\" width=\"48\" height=\"10\" fill=\"black\"/><rect x=\"137\" y=\"69\" width=\"30\" height=\"10\" transform=\"rotate(90 137 69)\" fill=\"black\"/></svg>",    
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

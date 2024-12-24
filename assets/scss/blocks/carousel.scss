@@ -41,14 +41,25 @@
                     gap: 8px;
                     box-sizing: border-box;
                     width: 100%;
-                    padding: 32px 32px 16px 32px;
+                    padding: 32px;
                     position: absolute;
                     bottom: 0;
                     color: white;
                     background-image: linear-gradient(transparent, black);
 
                     > h3 {
-                        font-weight: 600;
+                        font-weight: 800;
+                        color: white;
+                    }
+
+                    > div {
+                        > *:first-child {
+                            margin-bottom: 0;
+                        }
+        
+                        > *:first-child {
+                            margin-top: 0;
+                        }
                     }
 
                     > * {

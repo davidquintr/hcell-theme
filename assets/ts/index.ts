@@ -1,5 +1,7 @@
-/** SCSS BASIC IMPORT */
+/** SCSS Basic Import */
 import '../scss/index.scss';
 
-/** TYPESCRIPT IMPORT */
+/** TypeScript Import */
+import "./blocks/horizontal-accordion"
 import "./blocks/carousel"
+import "./template-part/header"

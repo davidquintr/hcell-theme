@@ -13,6 +13,22 @@
             
             &-link {
                 text-decoration: none;
+
+                i {
+                    color: var(--wp--preset--color--primary);
+                    font-size: var(--size);
+                }
+
+                span {
+                    color: var(--wp--preset--color--secondary);
+                    font-size: var(--size);
+
+                    @media screen and (max-width: 781px) {
+                        font-size: calc(var(--size)* 0.8);
+                    }
+                    
+                }
+
             }   
         }    
     }

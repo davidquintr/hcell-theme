@@ -1,26 +1,48 @@
 .tecnoblock {
     &-accordion {
+        position: relative;
+        z-index: 1;
         &-item{
-            border: 1px solid  var(--wp--preset--color--background);
-            border-bottom: none;
+            border: 1px solid  var(--wp--preset--color--secondary);
+            border-bottom: none !important;
+            overflow: hidden;
+            transition: 0.3s opacity;
+            z-index: 10;
+            background: white;
+            position: relative;
 
-            &:not(:first-child) {
-                border-bottom: 1px solid  var(--wp--preset--color--background);
+            &:last-child {
+                border-bottom: 1px solid var(--wp--preset--color--secondary) !important;
             }
+
 
             > * {
                 padding: 16px;
             }
 
+            &:first-child {
+                border-radius: 16px 16px 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0 0 16px 16px;
+            }
+
             &-title {
-                transition: 0.3s background-color;
+                transition: background-color 0.3s, color 0.3s;
                 cursor: pointer;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                color: var(--wp--preset--color--secondary);
+                
+                span {
+                    color: inherit;
+                }
                 
                 &:hover {
-                    background-color: var(--wp--preset--color--background);
+                    background-color: var(--wp--preset--color--secondary);
+                    color: white;
                 }
             }
 
@@ -29,22 +51,28 @@
                 transition: height 0.5s;
                 height: 0;
                 interpolate-size: allow-keywords;
+                color: var(--wp--preset--color--secondary);
 
                 @starting-style {
                     height: 0;
                 }
             }
 
+            &:not([open]) {
+                opacity: 0.5;
+            }
+
             &[open] .tecnoblock-accordion-item-title {
                 font-weight: 600;
-                background-color: var(--wp--preset--color--background); 
+                background-color: var(--wp--preset--color--secondary); 
+                color: white;
 
                 > i.closed-icon {
                     display: none;
                 }
             }
 
-            &:not([open]) .tecnoblock-accordion-item-title {
+            &:not([open]) &-title {
                 > i.open-icon {
                     display: none;
                 }
@@ -52,6 +80,18 @@
 
             &[open] &-content {
                 height: auto;
+
+                * {
+                    font-size: var(--wp--preset--font-size--medium);
+                }
+
+                > *:first-child {
+                    margin-bottom: 0;
+                }
+
+                > *:first-child {
+                    margin-top: 0;
+                }
             }
         }
     }

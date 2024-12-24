@@ -1,0 +1,31 @@
+html {
+    overflow-x: hidden;
+}
+
+.wp-block-post-template.columns-3 {
+    @media screen and (min-width: 600px) and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wp-block-read-more {
+        transition: 0.3s background-color;
+
+        &:hover {
+            background-color: var(--wp--preset--color--secondary) !important;
+        }
+    }
+}
+
+.wp-block-button__link {
+    transition: 0.3s background-color;
+}
+
+@media screen and (max-width: 781px) {
+    .skip-animation-mobile {
+        animation: none !important;
+    }
+}
+
+.set-on-reverse {
+    flex-direction: row-reverse;
+}

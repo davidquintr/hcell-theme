@@ -1,0 +1,66 @@
+.shape-orange {
+    position: relative;
+
+    > * {
+        display: block !important;
+        position: relative;
+        z-index: 1;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        filter: blur(128px);
+        z-index: 0;
+        width: 320px;
+        aspect-ratio: 0.93;
+        height: auto;
+        background-color: var(--wp--preset--color--primary);
+        border-radius: 50%;
+        @media screen and (max-width: 781px) {
+            z-index: -1 !important;
+            width: 160px !important;
+        }
+    }
+}
+
+
+.shape-semi-circle {
+    position: relative;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 44" fill="none"><path d="M0 0C0 11.6694 4.58311 22.8612 12.741 31.1125C20.8986 39.3642 31.9632 44 43.5 44C55.0368 44 66.1013 39.3642 74.2591 31.1129C82.417 22.8612 87 11.6694 87 0L43.5 0L0 0Z" fill="%23FF7301"/></svg>');
+        width: 87px;
+        height: 44px;
+
+        @media screen and (max-width: 781px) {
+            z-index: -1 !important;
+        }
+    }
+
+    &::before {
+        top: -16px;
+        right: -16px;
+        z-index: 0;
+        transform: rotate(180deg);
+
+        @media screen and (max-width: 1280px) {
+            opacity: 0.7;
+        }
+    }
+
+    &::after {
+        bottom: -16px;
+        left: -16px;
+        z-index: 0;
+        @media screen and (max-width: 1280px) {
+            opacity: 0.3;
+        }
+    }
+}

@@ -3,7 +3,7 @@
     "title": "Listar Redes Sociales",
     "description": "Muestra las Redes Sociales configuradas para el sitio en la página de Ajustes Visuales.",
     "category": "widgets",
-    "icon": "<svg viewBox=\"0 0 21 21\"><g fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" transform=\"translate(2 5)\"><path d=\"m12.5.5h-8.00000001c-1.1045695 0-2 .8954305-2 2v6c0 1.1045695.8954305 2 2 2h8.00000001c1.1045695 0 2-.8954305 2-2v-6c0-1.1045695-.8954305-2-2-2z\"/><path d=\"m16.5.5v10\"/><path d=\"m.5.5v10\"/></g></svg>",
+    "icon": "<svg width=\"273\" height=\"168\" viewBox=\"0 0 273 168\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M168 0H0V168H168V0ZM152 16H16V152H152V16Z\" fill=\"black\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M273 26H157V142H273V26ZM261.952 37.0476H168.048V130.952H261.952V37.0476Z\" fill=\"black\"/><path d=\"M66.8571 82.85L101.714 56.975C102.286 59.275 104 61 106.857 61H118.286C121.714 61 124 58.7 124 55.25V43.75C124 40.3 121.714 38 118.286 38H106.857C103.429 38 101.143 40.3 101.143 43.75V46.05L64.5714 73.65C63.4286 73.075 62.2857 72.5 61.1429 72.5H49.7143C46.2857 72.5 44 74.8 44 78.25V89.75C44 93.2 46.2857 95.5 49.7143 95.5H61.1429C62.2857 95.5 63.4286 94.925 64.5714 94.35L101.143 121.95V124.25C101.143 127.7 103.429 130 106.857 130H118.286C121.714 130 124 127.7 124 124.25V112.75C124 109.3 121.714 107 118.286 107H106.857C104 107 102.286 108.725 101.714 111.025L66.8571 85.15V82.85Z\" fill=\"black\"/></svg>",    
     "keywords": [],
     "acf": {
         "mode": "preview",
