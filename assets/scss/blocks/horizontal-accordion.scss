@@ -60,7 +60,7 @@
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
-                background-color: var(--wp--preset--color--low-orange);
+                background-color: var(--wp--preset--color--contrast);
 
                 &:hover {
                     background-color: white;
@@ -100,7 +100,7 @@
                     align-items: center;
                     height: auto;
                     padding: 8px;
-                    background-color: var(--wp--preset--color--low-orange);
+                    background-color: var(--wp--preset--color--contrast);
                     border-radius: 999px;
                     aspect-ratio: 1 ;
                 }

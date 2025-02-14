@@ -1,0 +1,15 @@
+{
+    "name": "tecnotool/search-bar",
+    "title": "Barra de Búsqueda",
+    "description": "Barra de búsqueda para buscar productos en la tienda",
+    "category": "widgets",
+    "icon": "<svg width=\"190\" height=\"190\" viewBox=\"0 0 190 190\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M91.0947 55.5269C71.4501 55.5269 55.5249 71.4519 55.5249 91.0963C55.5249 110.741 71.4501 126.667 91.0947 126.667C98.0503 126.667 104.54 124.67 110.02 121.219L120.063 131.261C123.154 134.353 128.167 134.353 131.258 131.261C134.35 128.169 134.35 123.156 131.258 120.065L121.217 110.023C124.668 104.542 126.664 98.0527 126.664 91.0963C126.664 71.4519 110.739 55.5269 91.0947 55.5269ZM71.3582 91.0963C71.3582 80.1966 80.1943 71.3602 91.0947 71.3602C101.995 71.3602 110.831 80.1966 110.831 91.0963C110.831 101.997 101.995 110.833 91.0947 110.833C80.1943 110.833 71.3582 101.997 71.3582 91.0963Z\" fill=\"#663691\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M179 11H11V179H179V11ZM165 25H25V165H165V25Z\" fill=\"#663691\"/></svg>",
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

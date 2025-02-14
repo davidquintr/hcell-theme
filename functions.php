@@ -18,16 +18,15 @@
 	 *
 	 * @return void
 	 */
+	
 	function tecnotool_support() {
-
-		// Enqueue editor styles.
+		add_theme_support('editor-styles');
+	
 		add_editor_style( '/dist/bundle.css' );
-		//add_editor_style( '/assets/css/fontawesome-6.7.1.css');
-
-
-		// Make theme available for translation.
+	
 		load_theme_textdomain( 'tecnotool' );
 	}
+	
 
 endif;
 

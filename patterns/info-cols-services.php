@@ -8,8 +8,8 @@
     $info_in_cols = get_field("info_in_cols");
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"right":"0","left":"0","top":"64px","bottom":"64px"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide" style="padding-top:64px;padding-right:0;padding-bottom:64px;padding-left:0"><!-- wp:columns {"align":"wide","className":"animated fadeInUp","style":{"spacing":{"padding":{"top":"16px","bottom":"16px","left":"16px","right":"16px"},"blockGap":{"top":"16px","left":"16px"},"margin":{"top":"0rem","bottom":"0rem"}},"border":{"radius":"40px"}},"backgroundColor":"low-orange"} -->
-<div class="wp-block-columns alignwide animated fadeInUp has-low-orange-background-color has-background" style="border-radius:40px;margin-top:0rem;margin-bottom:0rem;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px">
+<div class="wp-block-group alignwide" style="padding-top:64px;padding-right:0;padding-bottom:64px;padding-left:0"><!-- wp:columns {"align":"wide","className":"animated fadeInUp","style":{"spacing":{"padding":{"top":"16px","bottom":"16px","left":"16px","right":"16px"},"blockGap":{"top":"16px","left":"16px"},"margin":{"top":"0rem","bottom":"0rem"}},"border":{"radius":"40px"}},"backgroundColor":"contrast"} -->
+<div class="wp-block-columns alignwide animated fadeInUp has-contrast-background-color has-background" style="border-radius:40px;margin-top:0rem;margin-bottom:0rem;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px">
 
 <?php foreach($info_in_cols as $info): ?>
     <?php 

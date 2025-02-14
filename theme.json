@@ -13,17 +13,17 @@
       "gradients": [],
       "palette": [
         {
-          "color": "#FF7301",
+          "color": "#f40407",
           "name": "Primary",
           "slug": "primary"
         },
         {
-          "color": "#124076",
+          "color": "#666666",
           "name": "Secondary",
           "slug": "secondary"
         },
         {
-          "color": "#0F1A27",
+          "color": "#000",
           "name": "Foreground",
           "slug": "foreground"
         },
@@ -33,14 +33,14 @@
           "slug": "background"
         },
         {
-          "color": "#537EB1",
+          "color": "#D79596",
           "name": "Tertiary",
           "slug": "tertiary"
         },
         {
-          "color": "#ff730133",
-          "name": "Low Orange",
-          "slug": "low-orange"
+          "color": "#D7D7D7",
+          "name": "Contrast",
+          "slug": "contrast"
         }
       ],
       "text": true
@@ -50,8 +50,14 @@
       "wideSize": "1280px"
     },
     "shadow": {
-      "defaultPresets": true,
-      "presets": []
+      "defaultPresets": false,
+      "presets": [
+				{
+					"name": "Natural",
+					"slug": "natural",
+					"shadow": "6px 0px 9px rgba(0, 0, 0, 0.2)"
+				}
+      ]
     },
     "spacing": {
       "customSpacingSize": true,
