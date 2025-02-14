@@ -18,7 +18,7 @@
           "slug": "primary"
         },
         {
-          "color": "#666666",
+          "color": "#4a4a4a",
           "name": "Secondary",
           "slug": "secondary"
         },
@@ -52,11 +52,11 @@
     "shadow": {
       "defaultPresets": false,
       "presets": [
-				{
-					"name": "Natural",
-					"slug": "natural",
-					"shadow": "6px 0px 9px rgba(0, 0, 0, 0.2)"
-				}
+        {
+          "name": "Natural",
+          "slug": "natural",
+          "shadow": "6px 0px 9px rgba(0, 0, 0, 0.2)"
+        }
       ]
     },
     "spacing": {
@@ -85,92 +85,136 @@
         {
           "fontFace": [
             {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "normal",
-              "fontWeight": "900",
-              "src": ["file:./assets/fonts/Nunito-Black.woff2"]
+              "fontWeight": "100",
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-100.woff2"]
             },
             {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "italic",
-              "fontWeight": "900",
-              "src": ["file:./assets/fonts/Nunito-BlackItalic.woff2"]
+              "fontWeight": "100",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-100italic.woff2"
+              ]
             },
             {
-              "fontFamily": "Nunito",
-              "fontStyle": "normal",
-              "fontWeight": "700",
-              "src": ["file:./assets/fonts/Nunito-Bold.woff2"]
-            },
-            {
-              "fontFamily": "Nunito",
-              "fontStyle": "italic",
-              "fontWeight": "700",
-              "src": ["file:./assets/fonts/Nunito-BoldItalic.woff2"]
-            },
-            {
-              "fontFamily": "Nunito",
-              "fontStyle": "normal",
-              "fontWeight": "800",
-              "src": ["file:./assets/fonts/Nunito-ExtraBold.woff2"]
-            },
-            {
-              "fontFamily": "Nunito",
-              "fontStyle": "italic",
-              "fontWeight": "800",
-              "src": ["file:./assets/fonts/Nunito-ExtraBoldItalic.woff2"]
-            },
-            {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "normal",
               "fontWeight": "200",
-              "src": ["file:./assets/fonts/Nunito-ExtraLight.woff2"]
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-200.woff2"]
             },
             {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "italic",
               "fontWeight": "200",
-              "src": ["file:./assets/fonts/Nunito-ExtraLightItalic.woff2"]
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-200italic.woff2"
+              ]
             },
             {
-              "fontFamily": "Nunito",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": ["file:./assets/fonts/Nunito-Italic.woff2"]
-            },
-            {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "normal",
               "fontWeight": "300",
-              "src": ["file:./assets/fonts/Nunito-Light.woff2"]
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-300.woff2"]
             },
             {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "italic",
               "fontWeight": "300",
-              "src": ["file:./assets/fonts/Nunito-LightItalic.woff2"]
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-300italic.woff2"
+              ]
             },
             {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "normal",
               "fontWeight": "400",
-              "src": ["file:./assets/fonts/Nunito-Regular.woff2"]
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-regular.woff2"
+              ]
             },
             {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
+              "fontStyle": "italic",
+              "fontWeight": "400",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-italic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "normal",
+              "fontWeight": "500",
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-500.woff2"]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "italic",
+              "fontWeight": "500",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-500italic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Roboto",
               "fontStyle": "normal",
               "fontWeight": "600",
-              "src": ["file:./assets/fonts/Nunito-SemiBold.woff2"]
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-600.woff2"]
             },
             {
-              "fontFamily": "Nunito",
+              "fontFamily": "Roboto",
               "fontStyle": "italic",
               "fontWeight": "600",
-              "src": ["file:./assets/fonts/Nunito-SemiBoldItalic.woff2"]
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-600italic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-700.woff2"]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "italic",
+              "fontWeight": "700",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-700italic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-800.woff2"]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "italic",
+              "fontWeight": "800",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-800italic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "normal",
+              "fontWeight": "900",
+              "src": ["file:./assets/fonts/roboto/roboto-v47-latin-900.woff2"]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "italic",
+              "fontWeight": "900",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-v47-latin-900italic.woff2"
+              ]
             }
           ],
-          "fontFamily": "Nunito",
-          "slug": "nunito"
+          "fontFamily": "Roboto",
+          "slug": "roboto"
         }
       ],
       "fontSizes": [
@@ -185,7 +229,7 @@
         },
         {
           "fluid": {
-            "max": "1.25rem",
+            "max": "1.5rem",
             "min": "1rem"
           },
           "name": "Medium",
@@ -231,7 +275,7 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--nunito)",
+          "fontFamily": "var(--wp--preset--font-family--roboto)",
           "fontSize": "0.9rem",
           "letterSpacing": "5%",
           "lineHeight": "1",
@@ -290,7 +334,7 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--nunito)"
+          "fontFamily": "var(--wp--preset--font-family--roboto)"
         }
       },
       "core/code": {
@@ -348,7 +392,7 @@
       },
       "core/media-text": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--nunito)",
+          "fontFamily": "var(--wp--preset--font-family--roboto)",
           "fontSize": "1.6rem"
         }
       },
@@ -366,12 +410,12 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--nunito)"
+          "fontFamily": "var(--wp--preset--font-family--roboto)"
         }
       },
       "core/paragraph": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--nunito)",
+          "fontFamily": "var(--wp--preset--font-family--roboto)",
           "fontSize": "1.4rem"
         }
       },
@@ -461,7 +505,7 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--nunito)",
+          "fontFamily": "var(--wp--preset--font-family--roboto)",
           "fontStyle": "normal"
         }
       },
@@ -594,7 +638,7 @@
           "text": "var(--wp--preset--color--primary)"
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--nunito)",
+          "fontFamily": "var(--wp--preset--font-family--roboto)",
           "fontStyle": "normal",
           "fontWeight": "500",
           "lineHeight": "1.125"
@@ -621,7 +665,7 @@
       }
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--nunito)",
+      "fontFamily": "var(--wp--preset--font-family--roboto)",
       "fontSize": "1.4rem",
       "fontStyle": "normal",
       "fontWeight": "400",

@@ -16,9 +16,9 @@
 	 *
 	 * @since tecnotool 1.0
 	 *
-	 * @return void
+	* @return void
 	 */
-	
+
 	function tecnotool_support() {
 		add_theme_support('editor-styles');
 	
@@ -87,6 +87,12 @@ function tecnotool_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/icons-list' );
     register_block_type( __DIR__ . '/blocks/list-social-medias' );
     register_block_type( __DIR__ . '/blocks/horizontal-accordion' );
+    register_block_type( __DIR__ . '/blocks/search-bar' );
+    register_block_type( __DIR__ . '/blocks/user-info' );
+    register_block_type( __DIR__ . '/blocks/hero-hcell' );
+    register_block_type( __DIR__ . '/blocks/list-taxonomy-w-icon' );
+	register_block_type( __DIR__ . '/blocks/custom-product-item' );
+	register_block_type( __DIR__ . '/blocks/taxonomy-featured-image' );
 }
 
 add_action( 'init', 'tecnotool_register_acf_blocks' );

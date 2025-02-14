@@ -1,0 +1,48 @@
+.tecnoblock-user-system {
+    position: relative;
+
+    &-button {
+        border: 1px solid white;
+        padding: 8px;
+        outline: none;
+        background-color: transparent;
+        border-radius: 999px;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s all;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        text-decoration: none;
+        background-color: white;
+
+        img {
+            border-radius: 999px;
+        }
+
+        span {
+            font-size: var(--wp--preset--font-size--small);
+            color: var(--wp--preset--color--foreground);
+
+            @media screen and (max-width: 768px) {
+                display: none;
+                
+            }
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:active {
+            transform:scale(0.95);
+        }
+
+        i {
+            color: var(--wp--preset--color--primary);
+            font-size: 24px;
+        }
+
+    }
+
+}

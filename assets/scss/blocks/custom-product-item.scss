@@ -1,0 +1,88 @@
+.tecnoblock-custom-product-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--wp--preset--color--contrast);
+
+    &-anchor {
+        text-decoration: none;
+        transition: 0.3s background-color;
+
+        &-meta {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+
+            span {
+                font-size: var(--wp--preset--font-size--small);
+                color: var(--wp--preset--color--secondary);
+            }
+
+            h2 {
+                margin: 0;
+                font-size: var(--wp--preset--font-size--medium);
+                color: var(--wp--preset--color--foreground);
+            }
+        }
+
+        &:active {
+            picture {
+                transform: scale(0.95);
+            }
+        }
+
+        &:hover {
+            background-color: var(--wp--preset--color--primary);
+            * {
+                color: white;
+            }
+        }
+
+        &-featured-image {
+            padding: 16px;
+
+            &-protector {
+                transition: 0.3s transform;
+                background-color: white;
+                padding: 8px;
+                aspect-ratio: 1/1;
+                display: flex;
+                border-radius: 8px;
+
+                img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &-buy {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+
+        > span {
+            font-weight: bold;
+            font-size: var(--wp--preset--font-size--large);
+            color: var(--wp--preset--color--secondary);
+        }
+
+        a.button {
+            font-size: var(--wp--preset--font-size--small);
+            text-decoration: none;
+            background-color: var(--wp--preset--color--contrast);
+            color: var(--wp--preset--color--secondary);
+            padding: 8px 16px;
+            border-radius: 8px;
+            
+            > span {
+                font-size: var(--wp--preset--font-size--small);
+            }
+        }
+    }
+}

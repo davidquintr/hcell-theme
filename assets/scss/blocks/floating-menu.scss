@@ -5,44 +5,82 @@
         display: flex;
         flex-direction: column;
         top: 50%;
-
-        &.location {
-            &-right {
-                right: 0;
-            }
-
-            &-left {
-                left: 0;
-            }
-        }
-
         margin: 0;
         padding: 0;
         transform: translateY(-50%);
 
+        &.location {
+            &-right {
+                right: 0;
+
+                > li:first-child {
+                    > a:not(:hover) {
+                        border-radius: 8px 0 0 0;
+                    }
+                }
+
+                > li:last-child {
+                    > a:not(:hover) {
+                        border-radius: 0 0 0 8px;
+                    }
+                }
+
+                > li:hover {
+                    > div.label {
+                        right: 100%;
+                    }
+                }
+            }
+
+            &-left {
+                left: 0;
+
+                > li:first-child {
+                    > a:not(:hover) {
+                        border-radius: 0 8px 0 0;
+                    }
+                }
+
+                > li:last-child {
+                    > a:not(:hover) {
+                        border-radius: 0 0 8px 0;
+                    }
+                }
+
+                > li:hover {
+                    > div.label {
+                        left: 100%;
+                    }
+                }
+            }
+        }
+
         &-item {
             position: relative;
             list-style: none;
-            color: var(--wp--preset--color--tertiary);
-            
-            &:hover {
-                color: var(--wp--preset--color--background);
-
-                .label {
-                    display: block;
-                    right: 100%;
-                }
-            }
+            color: white;
             
             &-icon {
                 position: relative;
-                background-color: var(--wp--preset--color--foreground);
+                background-color: var(--wp--preset--color--secondary);
                 color: inherit;
                 display: flex;
                 justify-content: center;
                 text-decoration: none;
                 padding: 8px;
                 z-index: 100;
+                transition: 0.3s all;
+                border: 1px solid var(--wp--preset--color--secondary);
+
+                &:hover {
+                    background-color: var(--wp--preset--color--primary);
+                }
+
+                &:active {
+                    i {
+                        transform: scale(0.95);
+                    }
+                }
 
                 i {
                     font-size: 24px;
@@ -50,8 +88,9 @@
             }
 
             .label {
-                color: var(--wp--preset--color--tertiary);
-                background-color: var(--wp--preset--color--primary);
+                pointer-events: none;
+                color: white;
+                background-color: var(--wp--preset--color--secondary);
                 display: flex;
                 align-items: center;
                 box-sizing: border-box;
@@ -61,8 +100,20 @@
                 height: 100%;
                 z-index: 99;
                 top: 0;
-                right: -200%;
-                transition: right 0.5s;
+                transition: all 0.5s;
+
+                &.location {
+
+                    &-right {
+                        right: -200%;
+
+                    }
+
+                    &-left {
+                        left: -200%;
+                    }
+                }
+
             }
         }
     }

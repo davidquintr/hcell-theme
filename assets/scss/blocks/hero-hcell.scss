@@ -1,0 +1,123 @@
+.tecnoblock-hero-hcell {
+    max-width: var(--wp--style--global--wide-size);
+    width: 100%;
+    height: 75vh;
+    max-height: 1024px;
+    overflow: hidden;
+    position: relative;
+    
+    .hero-background {
+        position: absolute;
+        height: 75%;
+        width: 100%;
+        background-image: url('/wp-content/themes/hcell-theme/assets/images/hero/background.webp');
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+    }
+
+    &-inner {
+        padding: 16px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        gap: 16px;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                margin: 0;
+                margin-top: 32px;
+                text-transform: uppercase;
+                color: var(--wp--preset--color--contrast);
+                font-size: clamp(48px, 5vw, 96px);
+
+                @media screen and (max-width: 768px) {
+                    font-size: var(--wp--preset--font-size--medium);
+                }
+            }
+
+            .product-info {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 32px;
+
+                @media screen and (max-width: 768px) {
+                    gap: 16px;
+                }
+
+                &-link {
+                    align-self: flex-start;
+                    padding: 16px 24px;
+                    background-color: var(--wp--preset--color--contrast);
+                    color: var(--wp--preset--color--secondary);
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 8px;
+                    transition: 0.3s all;
+                    justify-content: center;
+
+                    i {
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        background-color: var(--wp--preset--color--primary);
+                        color: white;
+                    }
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                } 
+
+                &-details {
+                    .product-title {
+                        font-weight: 800;
+                        font-size: clamp(48px, 4vw, 64px);
+                        color: var(--wp--preset--color--foreground);
+                        margin: 0;
+                    }
+                    
+                    p {
+                        margin: 0;
+                        margin-top: 8px;
+                        color: var(--wp--preset--color--secondary);
+                    }
+                }
+            }
+        }
+   
+
+        &-promotional {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    position: relative;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.tecnoblock-list-taxonomy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+    margin-block: 32px;
+    gap: 16px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+
+    &-item {
+        list-style: none;
+        a {
+            border: 1px solid var(--wp--preset--color--contrast);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s all;
+
+            &:after {
+                transform: skew(45deg);
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                transition: left 0.8s;
+            }
+
+            &:hover {
+                background-color: var(--wp--preset--color--primary);
+
+                img {
+                    filter: invert(1);
+                }
+            }
+
+            &:hover:after {
+                left: 125%;
+            }
+            
+            > img {
+                height: 128px;
+            }
+        }
+    }
+}

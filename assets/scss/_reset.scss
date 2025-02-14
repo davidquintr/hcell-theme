@@ -29,3 +29,45 @@ html {
 .set-on-reverse {
     flex-direction: row-reverse;
 }
+
+.wc-block-mini-cart__button {
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 9999px;
+    transition: 0.3s all;
+    height: 100%;
+    background-color: white;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    > span {
+        margin: 0;
+    }
+}
+
+.wp-block-navigation__container  {
+    a.wp-block-navigation-item__content {
+        &:hover {
+            color: var(--wp--preset--color--primary) !important;
+            text-decoration: none !important;
+        }
+    }
+}
+
+.product-template-intervened {
+    gap: 16px !important;
+    
+    .wc-block-product {
+        display: none;
+    }
+}
