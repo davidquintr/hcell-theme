@@ -79,6 +79,13 @@ function tecnotool_enqueue_editor_scripts() {
 }
 add_action( 'enqueue_block_editor_assets', 'tecnotool_enqueue_editor_scripts' );
 
+function restrict_search_to_products($query) {
+    if (!is_admin() && $query->is_search() && $query->is_main_query()) {
+        $query->set('post_type', 'product');
+    }
+}
+add_action('pre_get_posts', 'restrict_search_to_products');
+
 
 function tecnotool_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/carousel' );

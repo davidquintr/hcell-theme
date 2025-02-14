@@ -13,6 +13,7 @@
             padding: 16px;
 
             span {
+                font-weight: 500;
                 font-size: var(--wp--preset--font-size--small);
                 color: var(--wp--preset--color--secondary);
             }
@@ -20,6 +21,7 @@
             h2 {
                 margin: 0;
                 font-size: var(--wp--preset--font-size--medium);
+                font-weight: bold;
                 color: var(--wp--preset--color--foreground);
             }
         }
@@ -79,6 +81,17 @@
             color: var(--wp--preset--color--secondary);
             padding: 8px 16px;
             border-radius: 8px;
+            transition: 0.3s all;
+            text-align: center;
+
+            &:active {
+                transform: scale(0.95);
+            }
+
+            &:hover {
+                background-color: var(--wp--preset--color--primary);
+                color: white;
+            }
             
             > span {
                 font-size: var(--wp--preset--font-size--small);

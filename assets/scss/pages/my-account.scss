@@ -1,0 +1,289 @@
+.account-page {
+    > main {
+      background-color: #eeeeee;
+    }
+  }
+  
+  .woocommerce-account {
+    background-color: #eeeeee;
+    font-family: var(--wp--preset--font-family--inter);
+  
+    .woocommerce-info {
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      align-items: center;
+      background-color: #eeeeee;
+      border-radius: 8px;
+  
+      a {
+        background-color: white !important;
+      }
+  
+      &::before,
+      &::after {
+        display: none !important;
+      }
+    }
+  
+    div.woocommerce {
+        margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      width: 100%;
+      max-width: unset !important;
+      gap: 16px;
+      min-height: 50vh;
+  
+      @media screen and (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      &::before,
+      &::after {
+        display: none !important;
+      }
+  
+      > * {
+        float: unset !important;
+        width: unset !important;
+        background-color: white;
+        padding: 16px;
+        border-radius: 8px;
+      }
+  
+      .woocommerce-ResetPassword,
+      .woocommerce-notices-wrapper {
+        grid-column: span 7;
+      }
+  
+      .woocommerce-MyAccount-navigation {
+        grid-column: span 2;
+  
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+  
+          li.woocommerce-MyAccount-navigation-link {
+            list-style: none;
+  
+            a {
+              display: flex;
+              gap: 8px;
+              width: 100%;
+              align-items: center;
+              text-decoration: none;
+              padding: 8px;
+  
+              i {
+                font-size: 12px;
+              }
+            }
+  
+            &:last-child {
+              margin-top: auto;
+            }
+  
+            &.is-active {
+              a {
+                color: var(--wp--preset--color--primary);
+                font-weight: 500;
+                position: relative;
+  
+                &::after {
+                  position: absolute;
+                  right: 0;
+                  content: "";
+                  width: 3px;
+                  height: 32px;
+                  background-color: var(--wp--preset--color--primary);
+                  border-radius: 8px;
+                }
+              }
+            }
+  
+            &:not(.is-active) a {
+              color: #4c535f;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+  
+      .woocommerce-MyAccount-content {
+        padding: 24px;
+        grid-column: span 5;
+  
+        @media screen and (max-width: 960px) {
+          grid-column: span 7;
+        }
+  
+        a {
+          text-decoration: none;
+          color: var(--wp--preset--color--primary);
+        }
+  
+        p {
+          margin-bottom: 16px;
+        }
+  
+        .woocommerce-orders-table {
+          border: none;
+          margin: 0;
+  
+          thead {
+            color: #4c535f;
+          }
+  
+          tbody tr td,
+          tbody tr th {
+            border: none;
+  
+            &.woocommerce-orders-table__cell-order-actions {
+              display: flex;
+              gap: 8px;
+  
+              a {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+  
+        .woocommerce-address-fields > p:last-child:not(.form-row) {
+          margin-top: 16px !important;
+        }
+  
+        .woocommerce-EditAccountForm,
+        .woocommerce-address-fields {
+          > p:last-child:not(.form-row) {
+            display: flex;
+            grid-column: span 2;
+            margin: 0;
+  
+            button {
+              background-color: #eeeeee;
+              margin-left: auto;
+              color: var(--wp--preset--color--primary);
+  
+              &:hover {
+                color: var(--wp--preset--color--secondary);
+              }
+            }
+          }
+        }
+  
+        .woocommerce-EditAccountForm,
+        .woocommerce-address-fields__field-wrapper {
+          font-family: var(--wp--preset--font-family--inter);
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 24px;
+  
+          @media screen and (max-width: 960px) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+  
+          .clear {
+            display: none;
+          }
+  
+          fieldset {
+            grid-column: span 2;
+            border: none;
+            padding: 0;
+          }
+  
+          .woocommerce-form-row,
+          .form-row {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+  
+            &.woocommerce-form-row--wide,
+            fieldset {
+              grid-column: span 2;
+            }
+  
+            &::before,
+            &::after {
+              display: none !important;
+            }
+  
+            label {
+              font-size: 12px;
+              color: #4c535f;
+  
+              .required {
+                color: var(--wp--preset--color--primary);
+                font-size: 10px;
+                line-height: 1;
+              }
+  
+              &.screen-reader-text {
+                all: unset !important;
+                font-size: 12px !important;
+                color: #4c535f !important;
+              }
+            }
+  
+            input {
+              border: 1px solid #e9eaf0;
+              border-radius: 8px;
+              background-color: #eeeeee;
+              color: #5a616d;
+              padding: 8px;
+            }
+  
+            em {
+              font-size: 10px;
+              line-height: 1;
+              color: #4c535f;
+            }
+          }
+        }
+  
+        .woocommerce-Addresses {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+  
+          @media screen and (max-width: 960px) {
+            grid-template-columns: 1fr;
+          }
+  
+          h3 {
+            margin-top: 0;
+          }
+  
+          > * {
+            float: unset !important;
+            width: unset !important;
+            padding: 16px;
+            background-color: #eeeeee;
+            border-radius: 8px;
+          }
+  
+          &::before,
+          &::after {
+            display: none !important;
+          }
+  
+          address {
+            color: var(--wp--preset--color--secondary);
+            font-size: 14px;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+  
