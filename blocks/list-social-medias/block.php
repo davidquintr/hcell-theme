@@ -22,7 +22,7 @@
         ?>
             <?php if(in_array($ON_BLOCK, $show_on)):?>
                 <li class="tecnoblock-social-medias-item style-<?php echo $icons_style ?> <?php echo $show_tag ? "with-tag" : "" ?>" style="--padding: <?php echo $icons_size ?>px">
-                    <a target="_blank" class="tecnoblock-social-medias-item-icon" href="<?php echo $media_link ?>">
+                    <a aria-label="<?php echo $media_label ?>" target="_blank" class="tecnoblock-social-medias-item-icon" href="<?php echo $media_link ?>">
                         <i style="--size: <?php echo $icons_size ?>px" class="<?php echo $media_value ?>"></i>
                         <?php if($show_tag): ?>
                             <span style="--size: <?php echo $icons_size ?>px"><?php echo $media_label ?></span>

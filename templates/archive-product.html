@@ -19,7 +19,7 @@
     <!-- wp:woocommerce/catalog-sorting /--></div>
     <!-- /wp:group -->
     
-    <!-- wp:woocommerce/product-collection {"queryId":9,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock","outofstock","onbackorder"],"taxQuery":[],"isProductCollectionBlock":true,"perPage":10,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill","fixedWidth":""},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":true,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
+    <!-- wp:woocommerce/product-collection {"queryId":1,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock","outofstock","onbackorder"],"taxQuery":[],"isProductCollectionBlock":true,"perPage":10,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill","fixedWidth":""},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":true,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
     <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template {"className":"product-template-intervened"} -->
     <!-- wp:tecnotool/custom-product-item {"name":"tecnotool/custom-product-item","mode":"preview"} /-->
     <!-- /wp:woocommerce/product-template -->
@@ -33,13 +33,13 @@
     <!-- /wp:query-pagination -->
     
     <!-- wp:woocommerce/product-collection-no-results -->
-    <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","flexWrap":"wrap"}} -->
-    <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"medium"} -->
-    <p class="has-medium-font-size"><strong>No results found</strong></p>
-    <!-- /wp:paragraph -->
+    <!-- wp:group {"style":{"spacing":{"blockGap":"8px","padding":{"top":"0","bottom":"0"},"margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","orientation":"vertical"}} -->
+    <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--80);padding-top:0;padding-bottom:0"><!-- wp:image {"sizeSlug":"large"} -->
+    <figure class="wp-block-image size-large"><img src="/wp-content/themes/hcell-theme/assets/images/not-found.webp" alt="not found"/></figure>
+    <!-- /wp:image -->
     
-    <!-- wp:paragraph -->
-    <p>You can try <a class="wc-link-clear-any-filters" href="#">clearing any filters</a> or head to our <a class="wc-link-stores-home" href="#">store's home</a></p>
+    <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}},"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"secondary","fontSize":"large"} -->
+    <p class="has-text-align-center has-secondary-color has-text-color has-link-color has-large-font-size" style="font-style:normal;font-weight:500">No se encontraron resultados</p>
     <!-- /wp:paragraph --></div>
     <!-- /wp:group -->
     <!-- /wp:woocommerce/product-collection-no-results --></div>

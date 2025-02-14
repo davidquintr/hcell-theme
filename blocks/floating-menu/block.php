@@ -20,7 +20,7 @@
         ?>
             <?php if(in_array($ON_BLOCK, $show_on)):?>
                 <li class="tecnoblock-floating-menu-item">
-                    <a target="_blank" class="tecnoblock-floating-menu-item-icon" href="<?php echo $media_link ?>">
+                    <a aria-label="<?php echo $media_label ?>" target="_blank" class="tecnoblock-floating-menu-item-icon" href="<?php echo $media_link ?>">
                         <i class="<?php echo $media_value ?>"></i>
                     </a>
                     <?php if($show_tag_on_hover): ?>

@@ -86,6 +86,7 @@ function restrict_search_to_products($query) {
 }
 add_action('pre_get_posts', 'restrict_search_to_products');
 
+add_image_size('promo-size', 580, 1031, true);
 
 function tecnotool_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/carousel' );

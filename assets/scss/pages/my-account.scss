@@ -35,6 +35,14 @@
       max-width: unset !important;
       gap: 16px;
       min-height: 50vh;
+
+      > h2 {
+        display: none;
+      }
+
+      form.woocommerce-form.woocommerce-form-login {
+        grid-column: span 7;
+      }
   
       @media screen and (max-width: 960px) {
         display: flex;

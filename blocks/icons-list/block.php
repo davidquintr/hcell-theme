@@ -17,7 +17,7 @@
         ?>
             <li class="tecnoblock-icons-list-item">
                 <?php if($enable_url): ?>
-                    <a class="tecnoblock-icons-list-item-link" target="_blank" <?php echo $enable_url ? 'href="' . $url . '"' : "" ?>>
+                    <a aria-label="<?php echo $text ?>" class="tecnoblock-icons-list-item-link" target="_blank" <?php echo $enable_url ? 'href="' . $url . '"' : "" ?>>
                 <?php else: ?>
                     <div class="tecnoblock-icons-list-item-link">
                 <?php endif; ?>
