@@ -16,6 +16,12 @@ html {
     }
 }
 
+@media screen and (max-width: 450px) {
+    .product-template-intervened {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 .wp-block-button__link {
     transition: 0.3s background-color;
 }
