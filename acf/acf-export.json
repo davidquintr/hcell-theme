@@ -1079,6 +1079,27 @@
                 "mime_types": "",
                 "allow_in_bindings": 0,
                 "preview_size": "medium"
+            },
+            {
+                "key": "field_67b355f19ed10",
+                "label": "Mostrar en Bloque",
+                "name": "show_on_block",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1,
+                "allow_in_bindings": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "ui": 1
             }
         ],
         "location": [
@@ -1595,53 +1616,6 @@
                 "placeholder": "",
                 "prepend": "",
                 "append": ""
-            },
-            {
-                "key": "field_67af403a8a259",
-                "label": "Tipo de Publicación",
-                "name": "post_type",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "maxlength": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_67af406e3c1e2",
-                "label": "acad",
-                "name": "acad",
-                "aria-label": "",
-                "type": "taxonomy",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "taxonomy": "category",
-                "add_term": 1,
-                "save_terms": 0,
-                "load_terms": 0,
-                "return_format": "id",
-                "field_type": "checkbox",
-                "allow_in_bindings": 0,
-                "bidirectional": 0,
-                "multiple": 0,
-                "allow_null": 0,
-                "bidirectional_target": []
             }
         ],
         "location": [
