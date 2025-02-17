@@ -17,7 +17,7 @@
 
                 if ($promotional_image) {
                     // Obtener una versión optimizada de la imagen en tamaño 580x1031
-                    $optimized_image = wp_get_attachment_image_src($promotional_image["ID"], [580, 1031]);
+                    $optimized_image = wp_get_attachment_image_src($promotional_image["ID"], [1039, 1312]);
                     $image_url = $optimized_image ? $optimized_image[0] : $promotional_image["url"];
                 ?>
 
